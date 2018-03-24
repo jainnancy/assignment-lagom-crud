@@ -1,0 +1,1 @@
+[2018-03-25 01:08:59,973] TRACE Controller 0 epoch 21 received response {error_code=0} for a request sent to broker knoldus-Inspiron-5558:9092 (id: 0 rack: null) (state.change.logger)

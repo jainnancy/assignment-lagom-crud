@@ -1,0 +1,1806 @@
+[2018-03-23 17:13:02,829] INFO Kafka data directory is /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/kafka_data. (com.lightbend.lagom.internal.kafka.KafkaLocalServer)
+[2018-03-23 17:13:03,468] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = false
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 3000
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 0.11.0-IV2
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,TRACE:TRACE,SASL_SSL:SASL_SSL,PLAINTEXT:PLAINTEXT
+	listeners = PLAINTEXT://:9092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/kafka_data
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 0.11.0-IV2
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 1
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 2
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 3
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2018-03-23 17:13:03,938] INFO Zookeeper data directory is /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/zookeeper_data. (com.lightbend.lagom.internal.kafka.KafkaLocalServer)
+[2018-03-23 17:13:03,945] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+[2018-03-23 17:13:03,951] INFO Server environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,951] INFO Server environment:host.name=knoldus-Inspiron-5558 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,951] INFO Server environment:java.version=1.8.0_151 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,951] INFO Server environment:java.vendor=Oracle Corporation (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,951] INFO Server environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,951] INFO Server environment:java.class.path=/home/knoldus/.sbt/boot/scala-2.12.4/lib/scala-library.jar:/home/knoldus/.ivy2/cache/com.lightbend.lagom/lagom-kafka-server_2.12/jars/lagom-kafka-server_2.12-1.4.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka_2.12/jars/kafka_2.12-0.11.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.11.0.1.jar:/home/knoldus/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.3.0.jar:/home/knoldus/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/home/knoldus/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-5.0.3.jar:/home/knoldus/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.25.jar:/home/knoldus/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar:/home/knoldus/.ivy2/cache/com.101tec/zkclient/jars/zkclient-0.10.jar:/home/knoldus/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.10.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-framework/bundles/curator-framework-2.10.0.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-client/bundles/curator-client-2.10.0.jar:/home/knoldus/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-test/jars/curator-test-2.10.0.jar:/home/knoldus/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.21.0-GA.jar:/home/knoldus/.ivy2/cache/org.apache.commons/commons-math/jars/commons-math-2.2.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,951] INFO Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,952] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,952] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,952] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,952] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,952] INFO Server environment:os.version=4.13.0-36-generic (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,952] INFO Server environment:user.name=knoldus (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,952] INFO Server environment:user.home=/home/knoldus (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,952] INFO Server environment:user.dir=/home/knoldus/IdeaProjects/lagom/assignment-lagom-crud (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,959] INFO tickTime set to 3000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,959] INFO minSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,959] INFO maxSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:03,971] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:13:05,036] INFO starting (kafka.server.KafkaServer)
+[2018-03-23 17:13:05,041] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2018-03-23 17:13:05,057] INFO Starting ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2018-03-23 17:13:05,061] INFO Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,061] INFO Client environment:host.name=knoldus-Inspiron-5558 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,061] INFO Client environment:java.version=1.8.0_151 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,061] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,061] INFO Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,061] INFO Client environment:java.class.path=/home/knoldus/.sbt/boot/scala-2.12.4/lib/scala-library.jar:/home/knoldus/.ivy2/cache/com.lightbend.lagom/lagom-kafka-server_2.12/jars/lagom-kafka-server_2.12-1.4.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka_2.12/jars/kafka_2.12-0.11.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.11.0.1.jar:/home/knoldus/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.3.0.jar:/home/knoldus/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/home/knoldus/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-5.0.3.jar:/home/knoldus/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.25.jar:/home/knoldus/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar:/home/knoldus/.ivy2/cache/com.101tec/zkclient/jars/zkclient-0.10.jar:/home/knoldus/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.10.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-framework/bundles/curator-framework-2.10.0.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-client/bundles/curator-client-2.10.0.jar:/home/knoldus/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-test/jars/curator-test-2.10.0.jar:/home/knoldus/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.21.0-GA.jar:/home/knoldus/.ivy2/cache/org.apache.commons/commons-math/jars/commons-math-2.2.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,062] INFO Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,062] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,062] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,062] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,062] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,062] INFO Client environment:os.version=4.13.0-36-generic (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,062] INFO Client environment:user.name=knoldus (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,062] INFO Client environment:user.home=/home/knoldus (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,062] INFO Client environment:user.dir=/home/knoldus/IdeaProjects/lagom/assignment-lagom-crud (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,063] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=org.I0Itec.zkclient.ZkClient@243c4f91 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:13:05,073] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:13:05,075] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:13:05,083] INFO Accepted socket connection from /127.0.0.1:40616 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:13:05,086] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:13:05,090] INFO Client attempting to establish new session at /127.0.0.1:40616 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:05,091] INFO Creating new log file: log.6f (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-03-23 17:13:05,196] INFO Established session 0x16252ab59580000 with negotiated timeout 6000 for client /127.0.0.1:40616 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:13:05,196] INFO Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x16252ab59580000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:13:05,197] INFO zookeeper state changed (SyncConnected) (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:13:05,383] INFO Cluster ID = vRe1N3HlRXuEwacqXFAKwg (kafka.server.KafkaServer)
+[2018-03-23 17:13:05,423] INFO [ThrottledRequestReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:13:05,424] INFO [ThrottledRequestReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:13:05,425] INFO [ThrottledRequestReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:13:05,477] INFO Loading logs. (kafka.log.LogManager)
+[2018-03-23 17:13:05,490] INFO Logs loading complete in 13 ms. (kafka.log.LogManager)
+[2018-03-23 17:13:05,612] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2018-03-23 17:13:05,618] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2018-03-23 17:13:05,749] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2018-03-23 17:13:05,753] INFO [Socket Server on Broker 0], Started 1 acceptor threads (kafka.network.SocketServer)
+[2018-03-23 17:13:05,776] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:13:05,781] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:13:05,784] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:13:05,858] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:13:05,873] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:13:05,873] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:13:05,886] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:13:05,895] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:13:05,929] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:13:05,941] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:13:05,976] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 32 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-23 17:13:06,025] INFO [ProducerId Manager 0]: Acquired new producerId block (brokerId:0,blockStartProducerId:10000,blockEndProducerId:10999) by writing to Zk with path version 11 (kafka.coordinator.transaction.ProducerIdManager)
+[2018-03-23 17:13:06,106] INFO [Transaction Coordinator 0]: Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:13:06,107] INFO Got user-level KeeperException when processing sessionid:0x16252ab59580000 type:delete cxid:0x28 zxid:0x73 txntype:-1 reqpath:n/a Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:13:06,130] INFO [Transaction Coordinator 0]: Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:13:06,153] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:13:06,198] INFO Will not load MX4J, mx4j-tools.jar is not in the classpath (kafka.utils.Mx4jLoader$)
+[2018-03-23 17:13:06,273] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:13:06,275] INFO Got user-level KeeperException when processing sessionid:0x16252ab59580000 type:create cxid:0x32 zxid:0x74 txntype:-1 reqpath:n/a Error Path:/brokers Error:KeeperErrorCode = NodeExists for /brokers (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:13:06,277] INFO Got user-level KeeperException when processing sessionid:0x16252ab59580000 type:create cxid:0x33 zxid:0x75 txntype:-1 reqpath:n/a Error Path:/brokers/ids Error:KeeperErrorCode = NodeExists for /brokers/ids (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:13:06,321] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:13:06,323] INFO Registered broker 0 at path /brokers/ids/0 with addresses: EndPoint(knoldus-Inspiron-5558,9092,ListenerName(PLAINTEXT),PLAINTEXT) (kafka.utils.ZkUtils)
+[2018-03-23 17:13:06,327] INFO Kafka version : 0.11.0.1 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-03-23 17:13:06,327] INFO Kafka commitId : c2a0d5f9b1f45bf5 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-03-23 17:13:06,328] INFO [Kafka Server 0], started (kafka.server.KafkaServer)
+[2018-03-23 17:14:17,186] INFO [Kafka Server 0], shutting down (kafka.server.KafkaServer)
+[2018-03-23 17:14:17,189] INFO [Kafka Server 0], Starting controlled shutdown (kafka.server.KafkaServer)
+[2018-03-23 17:14:17,306] INFO [Kafka Server 0], Controlled shutdown succeeded (kafka.server.KafkaServer)
+[2018-03-23 17:14:17,310] INFO [Socket Server on Broker 0], Shutting down (kafka.network.SocketServer)
+[2018-03-23 17:14:17,332] INFO [Socket Server on Broker 0], Shutdown completed (kafka.network.SocketServer)
+[2018-03-23 17:14:17,335] INFO [Kafka Request Handler on Broker 0], shutting down (kafka.server.KafkaRequestHandlerPool)
+[2018-03-23 17:14:17,357] INFO [Kafka Request Handler on Broker 0], shut down completely (kafka.server.KafkaRequestHandlerPool)
+[2018-03-23 17:14:17,362] INFO [ThrottledRequestReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:14:17,436] INFO [ThrottledRequestReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:14:17,436] INFO [ThrottledRequestReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:14:17,436] INFO [ThrottledRequestReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:14:18,433] INFO [ThrottledRequestReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:14:18,433] INFO [ThrottledRequestReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:14:18,433] INFO [ThrottledRequestReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:14:18,435] INFO [ThrottledRequestReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:14:18,435] INFO [ThrottledRequestReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:14:18,437] INFO [KafkaApi-0] Shutdown complete. (kafka.server.KafkaApis)
+[2018-03-23 17:14:18,441] INFO [ExpirationReaper-0-topic]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:18,533] INFO [ExpirationReaper-0-topic]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:18,533] INFO [ExpirationReaper-0-topic]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:18,536] INFO [Transaction Coordinator 0]: Shutting down. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:14:18,537] INFO [ProducerId Manager 0]: Shutdown complete: last producerId assigned 10000 (kafka.coordinator.transaction.ProducerIdManager)
+[2018-03-23 17:14:18,538] INFO [Transaction State Manager 0]: Shutdown complete (kafka.coordinator.transaction.TransactionStateManager)
+[2018-03-23 17:14:18,538] INFO [Transaction Marker Channel Manager 0]: Shutting down (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:14:18,539] INFO [Transaction Marker Channel Manager 0]: Stopped (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:14:18,539] INFO [Transaction Marker Channel Manager 0]: Shutdown completed (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:14:18,540] INFO [Transaction Coordinator 0]: Shutdown complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:14:18,541] INFO [GroupCoordinator 0]: Shutting down. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:14:18,543] INFO [ExpirationReaper-0-Heartbeat]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:18,727] INFO [ExpirationReaper-0-Heartbeat]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:18,727] INFO [ExpirationReaper-0-Heartbeat]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:18,727] INFO [ExpirationReaper-0-Rebalance]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:18,733] INFO [ExpirationReaper-0-Rebalance]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:18,733] INFO [ExpirationReaper-0-Rebalance]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:18,734] INFO [GroupCoordinator 0]: Shutdown complete. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:14:18,735] INFO [Replica Manager on Broker 0]: Shutting down (kafka.server.ReplicaManager)
+[2018-03-23 17:14:18,735] INFO [ReplicaFetcherManager on broker 0] shutting down (kafka.server.ReplicaFetcherManager)
+[2018-03-23 17:14:18,738] INFO [ReplicaFetcherManager on broker 0] shutdown completed (kafka.server.ReplicaFetcherManager)
+[2018-03-23 17:14:18,738] INFO [ExpirationReaper-0-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:18,829] INFO [ExpirationReaper-0-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:18,829] INFO [ExpirationReaper-0-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:18,829] INFO [ExpirationReaper-0-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:19,022] INFO [ExpirationReaper-0-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:19,022] INFO [ExpirationReaper-0-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:19,022] INFO [ExpirationReaper-0-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:19,032] INFO [ExpirationReaper-0-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:19,032] INFO [ExpirationReaper-0-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:14:19,040] INFO [Replica Manager on Broker 0]: Shut down completely (kafka.server.ReplicaManager)
+[2018-03-23 17:14:19,042] INFO Shutting down. (kafka.log.LogManager)
+[2018-03-23 17:14:19,052] INFO Shutdown complete. (kafka.log.LogManager)
+[2018-03-23 17:14:19,059] INFO Terminate ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2018-03-23 17:14:19,060] INFO Processed session termination for sessionid: 0x16252ab59580000 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:14:19,083] INFO Session: 0x16252ab59580000 closed (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:14:19,084] INFO Closed socket connection for client /127.0.0.1:40616 which had sessionid 0x16252ab59580000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-03-23 17:14:19,086] INFO EventThread shut down for session: 0x16252ab59580000 (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:14:19,087] INFO [Kafka Server 0], shut down completed (kafka.server.KafkaServer)
+[2018-03-23 17:14:19,088] INFO NIOServerCnxn factory exited run method (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:14:19,088] INFO shutting down (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:14:19,088] INFO Shutting down (org.apache.zookeeper.server.SessionTrackerImpl)
+[2018-03-23 17:14:19,088] INFO Shutting down (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:14:19,088] INFO Shutting down (org.apache.zookeeper.server.SyncRequestProcessor)
+[2018-03-23 17:14:19,088] INFO PrepRequestProcessor exited loop! (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:14:19,088] INFO SyncRequestProcessor exited! (org.apache.zookeeper.server.SyncRequestProcessor)
+[2018-03-23 17:14:19,088] INFO shutdown of request processor complete (org.apache.zookeeper.server.FinalRequestProcessor)
+[2018-03-23 17:15:34,013] INFO Kafka data directory is /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/kafka_data. (com.lightbend.lagom.internal.kafka.KafkaLocalServer)
+[2018-03-23 17:15:34,457] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = false
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 3000
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 0.11.0-IV2
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,TRACE:TRACE,SASL_SSL:SASL_SSL,PLAINTEXT:PLAINTEXT
+	listeners = PLAINTEXT://:9092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/kafka_data
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 0.11.0-IV2
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 1
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 2
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 3
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2018-03-23 17:15:34,746] INFO Zookeeper data directory is /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/zookeeper_data. (com.lightbend.lagom.internal.kafka.KafkaLocalServer)
+[2018-03-23 17:15:34,751] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+[2018-03-23 17:15:34,756] INFO Server environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,756] INFO Server environment:host.name=knoldus-Inspiron-5558 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,767] INFO Server environment:java.version=1.8.0_151 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,767] INFO Server environment:java.vendor=Oracle Corporation (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,767] INFO Server environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,767] INFO Server environment:java.class.path=/home/knoldus/.sbt/boot/scala-2.12.4/lib/scala-library.jar:/home/knoldus/.ivy2/cache/com.lightbend.lagom/lagom-kafka-server_2.12/jars/lagom-kafka-server_2.12-1.4.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka_2.12/jars/kafka_2.12-0.11.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.11.0.1.jar:/home/knoldus/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.3.0.jar:/home/knoldus/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/home/knoldus/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-5.0.3.jar:/home/knoldus/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.25.jar:/home/knoldus/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar:/home/knoldus/.ivy2/cache/com.101tec/zkclient/jars/zkclient-0.10.jar:/home/knoldus/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.10.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-framework/bundles/curator-framework-2.10.0.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-client/bundles/curator-client-2.10.0.jar:/home/knoldus/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-test/jars/curator-test-2.10.0.jar:/home/knoldus/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.21.0-GA.jar:/home/knoldus/.ivy2/cache/org.apache.commons/commons-math/jars/commons-math-2.2.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,767] INFO Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,767] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,767] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,767] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,767] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,767] INFO Server environment:os.version=4.13.0-36-generic (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,768] INFO Server environment:user.name=knoldus (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,768] INFO Server environment:user.home=/home/knoldus (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,768] INFO Server environment:user.dir=/home/knoldus/IdeaProjects/lagom/assignment-lagom-crud (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,775] INFO tickTime set to 3000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,775] INFO minSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,775] INFO maxSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:34,786] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:15:35,858] INFO starting (kafka.server.KafkaServer)
+[2018-03-23 17:15:35,863] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2018-03-23 17:15:35,889] INFO Starting ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2018-03-23 17:15:35,890] INFO Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,890] INFO Client environment:host.name=knoldus-Inspiron-5558 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,891] INFO Client environment:java.version=1.8.0_151 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,891] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,891] INFO Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,891] INFO Client environment:java.class.path=/home/knoldus/.sbt/boot/scala-2.12.4/lib/scala-library.jar:/home/knoldus/.ivy2/cache/com.lightbend.lagom/lagom-kafka-server_2.12/jars/lagom-kafka-server_2.12-1.4.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka_2.12/jars/kafka_2.12-0.11.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.11.0.1.jar:/home/knoldus/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.3.0.jar:/home/knoldus/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/home/knoldus/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-5.0.3.jar:/home/knoldus/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.25.jar:/home/knoldus/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar:/home/knoldus/.ivy2/cache/com.101tec/zkclient/jars/zkclient-0.10.jar:/home/knoldus/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.10.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-framework/bundles/curator-framework-2.10.0.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-client/bundles/curator-client-2.10.0.jar:/home/knoldus/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-test/jars/curator-test-2.10.0.jar:/home/knoldus/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.21.0-GA.jar:/home/knoldus/.ivy2/cache/org.apache.commons/commons-math/jars/commons-math-2.2.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,891] INFO Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,891] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,891] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,891] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,891] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,891] INFO Client environment:os.version=4.13.0-36-generic (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,891] INFO Client environment:user.name=knoldus (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,891] INFO Client environment:user.home=/home/knoldus (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,891] INFO Client environment:user.dir=/home/knoldus/IdeaProjects/lagom/assignment-lagom-crud (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,892] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=org.I0Itec.zkclient.ZkClient@243c4f91 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:15:35,900] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:15:35,902] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:15:35,907] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:15:35,907] INFO Accepted socket connection from /127.0.0.1:40690 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:15:35,914] INFO Client attempting to establish new session at /127.0.0.1:40690 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:35,915] INFO Creating new log file: log.78 (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-03-23 17:15:35,977] INFO Established session 0x16252ada6810000 with negotiated timeout 6000 for client /127.0.0.1:40690 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:15:35,977] INFO Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x16252ada6810000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:15:35,978] INFO zookeeper state changed (SyncConnected) (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:15:36,184] INFO Cluster ID = vRe1N3HlRXuEwacqXFAKwg (kafka.server.KafkaServer)
+[2018-03-23 17:15:36,229] INFO [ThrottledRequestReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:15:36,231] INFO [ThrottledRequestReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:15:36,231] INFO [ThrottledRequestReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:15:36,280] INFO Loading logs. (kafka.log.LogManager)
+[2018-03-23 17:15:36,292] INFO Logs loading complete in 12 ms. (kafka.log.LogManager)
+[2018-03-23 17:15:36,410] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2018-03-23 17:15:36,417] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2018-03-23 17:15:36,588] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2018-03-23 17:15:36,593] INFO [Socket Server on Broker 0], Started 1 acceptor threads (kafka.network.SocketServer)
+[2018-03-23 17:15:36,620] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:15:36,625] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:15:36,626] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:15:36,754] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:15:36,761] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:15:36,768] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:15:36,773] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:15:36,813] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:15:36,836] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:15:36,845] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:15:36,870] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 21 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-23 17:15:36,929] INFO [ProducerId Manager 0]: Acquired new producerId block (brokerId:0,blockStartProducerId:11000,blockEndProducerId:11999) by writing to Zk with path version 12 (kafka.coordinator.transaction.ProducerIdManager)
+[2018-03-23 17:15:36,987] INFO [Transaction Coordinator 0]: Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:15:36,993] INFO [Transaction Coordinator 0]: Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:15:37,001] INFO Got user-level KeeperException when processing sessionid:0x16252ada6810000 type:delete cxid:0x28 zxid:0x7c txntype:-1 reqpath:n/a Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:15:37,002] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:15:37,038] INFO Will not load MX4J, mx4j-tools.jar is not in the classpath (kafka.utils.Mx4jLoader$)
+[2018-03-23 17:15:37,102] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:15:37,104] INFO Got user-level KeeperException when processing sessionid:0x16252ada6810000 type:create cxid:0x32 zxid:0x7d txntype:-1 reqpath:n/a Error Path:/brokers Error:KeeperErrorCode = NodeExists for /brokers (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:15:37,106] INFO Got user-level KeeperException when processing sessionid:0x16252ada6810000 type:create cxid:0x33 zxid:0x7e txntype:-1 reqpath:n/a Error Path:/brokers/ids Error:KeeperErrorCode = NodeExists for /brokers/ids (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:15:37,130] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:15:37,132] INFO Registered broker 0 at path /brokers/ids/0 with addresses: EndPoint(knoldus-Inspiron-5558,9092,ListenerName(PLAINTEXT),PLAINTEXT) (kafka.utils.ZkUtils)
+[2018-03-23 17:15:37,138] INFO Kafka version : 0.11.0.1 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-03-23 17:15:37,138] INFO Kafka commitId : c2a0d5f9b1f45bf5 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-03-23 17:15:37,139] INFO [Kafka Server 0], started (kafka.server.KafkaServer)
+[2018-03-23 17:19:38,034] INFO [Kafka Server 0], shutting down (kafka.server.KafkaServer)
+[2018-03-23 17:19:38,041] INFO [Kafka Server 0], Starting controlled shutdown (kafka.server.KafkaServer)
+[2018-03-23 17:19:38,139] INFO [Kafka Server 0], Controlled shutdown succeeded (kafka.server.KafkaServer)
+[2018-03-23 17:19:38,144] INFO [Socket Server on Broker 0], Shutting down (kafka.network.SocketServer)
+[2018-03-23 17:19:38,170] INFO [Socket Server on Broker 0], Shutdown completed (kafka.network.SocketServer)
+[2018-03-23 17:19:38,171] INFO [Kafka Request Handler on Broker 0], shutting down (kafka.server.KafkaRequestHandlerPool)
+[2018-03-23 17:19:38,179] INFO [Kafka Request Handler on Broker 0], shut down completely (kafka.server.KafkaRequestHandlerPool)
+[2018-03-23 17:19:38,183] INFO [ThrottledRequestReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:19:38,261] INFO [ThrottledRequestReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:19:38,261] INFO [ThrottledRequestReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:19:38,262] INFO [ThrottledRequestReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:19:39,261] INFO [ThrottledRequestReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:19:39,261] INFO [ThrottledRequestReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:19:39,261] INFO [ThrottledRequestReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:19:40,261] INFO [ThrottledRequestReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:19:40,261] INFO [ThrottledRequestReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:19:40,262] INFO [KafkaApi-0] Shutdown complete. (kafka.server.KafkaApis)
+[2018-03-23 17:19:40,263] INFO [ExpirationReaper-0-topic]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,324] INFO [ExpirationReaper-0-topic]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,324] INFO [ExpirationReaper-0-topic]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,327] INFO [Transaction Coordinator 0]: Shutting down. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:19:40,329] INFO [ProducerId Manager 0]: Shutdown complete: last producerId assigned 11000 (kafka.coordinator.transaction.ProducerIdManager)
+[2018-03-23 17:19:40,329] INFO [Transaction State Manager 0]: Shutdown complete (kafka.coordinator.transaction.TransactionStateManager)
+[2018-03-23 17:19:40,330] INFO [Transaction Marker Channel Manager 0]: Shutting down (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:19:40,330] INFO [Transaction Marker Channel Manager 0]: Stopped (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:19:40,330] INFO [Transaction Marker Channel Manager 0]: Shutdown completed (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:19:40,331] INFO [Transaction Coordinator 0]: Shutdown complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:19:40,333] INFO [GroupCoordinator 0]: Shutting down. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:19:40,333] INFO [ExpirationReaper-0-Heartbeat]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,336] INFO [ExpirationReaper-0-Heartbeat]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,336] INFO [ExpirationReaper-0-Heartbeat]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,336] INFO [ExpirationReaper-0-Rebalance]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,346] INFO [ExpirationReaper-0-Rebalance]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,346] INFO [ExpirationReaper-0-Rebalance]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,347] INFO [GroupCoordinator 0]: Shutdown complete. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:19:40,348] INFO [Replica Manager on Broker 0]: Shutting down (kafka.server.ReplicaManager)
+[2018-03-23 17:19:40,348] INFO [ReplicaFetcherManager on broker 0] shutting down (kafka.server.ReplicaFetcherManager)
+[2018-03-23 17:19:40,358] INFO [ReplicaFetcherManager on broker 0] shutdown completed (kafka.server.ReplicaFetcherManager)
+[2018-03-23 17:19:40,358] INFO [ExpirationReaper-0-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,387] INFO [ExpirationReaper-0-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,387] INFO [ExpirationReaper-0-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,387] INFO [ExpirationReaper-0-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,587] INFO [ExpirationReaper-0-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,587] INFO [ExpirationReaper-0-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,587] INFO [ExpirationReaper-0-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,590] INFO [ExpirationReaper-0-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,590] INFO [ExpirationReaper-0-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:19:40,595] INFO [Replica Manager on Broker 0]: Shut down completely (kafka.server.ReplicaManager)
+[2018-03-23 17:19:40,596] INFO Shutting down. (kafka.log.LogManager)
+[2018-03-23 17:19:40,607] INFO Shutdown complete. (kafka.log.LogManager)
+[2018-03-23 17:19:40,616] INFO Terminate ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2018-03-23 17:19:40,617] INFO Processed session termination for sessionid: 0x16252ada6810000 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:19:40,641] INFO Session: 0x16252ada6810000 closed (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:19:40,641] INFO Closed socket connection for client /127.0.0.1:40690 which had sessionid 0x16252ada6810000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-03-23 17:19:40,643] INFO EventThread shut down for session: 0x16252ada6810000 (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:19:40,646] INFO [Kafka Server 0], shut down completed (kafka.server.KafkaServer)
+[2018-03-23 17:19:40,646] INFO NIOServerCnxn factory exited run method (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:19:40,647] INFO shutting down (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:19:40,647] INFO Shutting down (org.apache.zookeeper.server.SessionTrackerImpl)
+[2018-03-23 17:19:40,647] INFO Shutting down (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:19:40,647] INFO Shutting down (org.apache.zookeeper.server.SyncRequestProcessor)
+[2018-03-23 17:19:40,647] INFO PrepRequestProcessor exited loop! (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:19:40,647] INFO SyncRequestProcessor exited! (org.apache.zookeeper.server.SyncRequestProcessor)
+[2018-03-23 17:19:40,647] INFO shutdown of request processor complete (org.apache.zookeeper.server.FinalRequestProcessor)
+[2018-03-23 17:20:49,625] INFO Kafka data directory is /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/kafka_data. (com.lightbend.lagom.internal.kafka.KafkaLocalServer)
+[2018-03-23 17:20:50,069] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = false
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 3000
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 0.11.0-IV2
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,TRACE:TRACE,SASL_SSL:SASL_SSL,PLAINTEXT:PLAINTEXT
+	listeners = PLAINTEXT://:9092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/kafka_data
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 0.11.0-IV2
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 1
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 2
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 3
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2018-03-23 17:20:50,357] INFO Zookeeper data directory is /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/zookeeper_data. (com.lightbend.lagom.internal.kafka.KafkaLocalServer)
+[2018-03-23 17:20:50,377] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+[2018-03-23 17:20:50,382] INFO Server environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,382] INFO Server environment:host.name=knoldus-Inspiron-5558 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,382] INFO Server environment:java.version=1.8.0_151 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,383] INFO Server environment:java.vendor=Oracle Corporation (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,383] INFO Server environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,383] INFO Server environment:java.class.path=/home/knoldus/.sbt/boot/scala-2.12.4/lib/scala-library.jar:/home/knoldus/.ivy2/cache/com.lightbend.lagom/lagom-kafka-server_2.12/jars/lagom-kafka-server_2.12-1.4.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka_2.12/jars/kafka_2.12-0.11.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.11.0.1.jar:/home/knoldus/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.3.0.jar:/home/knoldus/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/home/knoldus/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-5.0.3.jar:/home/knoldus/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.25.jar:/home/knoldus/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar:/home/knoldus/.ivy2/cache/com.101tec/zkclient/jars/zkclient-0.10.jar:/home/knoldus/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.10.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-framework/bundles/curator-framework-2.10.0.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-client/bundles/curator-client-2.10.0.jar:/home/knoldus/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-test/jars/curator-test-2.10.0.jar:/home/knoldus/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.21.0-GA.jar:/home/knoldus/.ivy2/cache/org.apache.commons/commons-math/jars/commons-math-2.2.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,383] INFO Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,383] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,383] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,383] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,383] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,383] INFO Server environment:os.version=4.13.0-36-generic (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,383] INFO Server environment:user.name=knoldus (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,383] INFO Server environment:user.home=/home/knoldus (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,383] INFO Server environment:user.dir=/home/knoldus/IdeaProjects/lagom/assignment-lagom-crud (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,391] INFO tickTime set to 3000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,391] INFO minSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,391] INFO maxSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:50,425] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:20:51,496] INFO starting (kafka.server.KafkaServer)
+[2018-03-23 17:20:51,500] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2018-03-23 17:20:51,525] INFO Starting ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2018-03-23 17:20:51,526] INFO Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,526] INFO Client environment:host.name=knoldus-Inspiron-5558 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,526] INFO Client environment:java.version=1.8.0_151 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,526] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,526] INFO Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,526] INFO Client environment:java.class.path=/home/knoldus/.sbt/boot/scala-2.12.4/lib/scala-library.jar:/home/knoldus/.ivy2/cache/com.lightbend.lagom/lagom-kafka-server_2.12/jars/lagom-kafka-server_2.12-1.4.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka_2.12/jars/kafka_2.12-0.11.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.11.0.1.jar:/home/knoldus/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.3.0.jar:/home/knoldus/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/home/knoldus/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-5.0.3.jar:/home/knoldus/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.25.jar:/home/knoldus/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar:/home/knoldus/.ivy2/cache/com.101tec/zkclient/jars/zkclient-0.10.jar:/home/knoldus/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.10.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-framework/bundles/curator-framework-2.10.0.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-client/bundles/curator-client-2.10.0.jar:/home/knoldus/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-test/jars/curator-test-2.10.0.jar:/home/knoldus/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.21.0-GA.jar:/home/knoldus/.ivy2/cache/org.apache.commons/commons-math/jars/commons-math-2.2.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,527] INFO Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,527] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,527] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,527] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,527] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,527] INFO Client environment:os.version=4.13.0-36-generic (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,527] INFO Client environment:user.name=knoldus (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,527] INFO Client environment:user.home=/home/knoldus (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,527] INFO Client environment:user.dir=/home/knoldus/IdeaProjects/lagom/assignment-lagom-crud (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,528] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=org.I0Itec.zkclient.ZkClient@243c4f91 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:20:51,542] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:20:51,542] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:20:51,552] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:20:51,552] INFO Accepted socket connection from /127.0.0.1:40836 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:20:51,558] INFO Client attempting to establish new session at /127.0.0.1:40836 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:51,559] INFO Creating new log file: log.81 (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-03-23 17:20:51,658] INFO Established session 0x16252b277720000 with negotiated timeout 6000 for client /127.0.0.1:40836 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:20:51,659] INFO Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x16252b277720000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:20:51,660] INFO zookeeper state changed (SyncConnected) (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:20:51,859] INFO Cluster ID = vRe1N3HlRXuEwacqXFAKwg (kafka.server.KafkaServer)
+[2018-03-23 17:20:51,926] INFO [ThrottledRequestReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:20:51,926] INFO [ThrottledRequestReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:20:51,928] INFO [ThrottledRequestReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:20:51,986] INFO Loading logs. (kafka.log.LogManager)
+[2018-03-23 17:20:52,001] INFO Logs loading complete in 15 ms. (kafka.log.LogManager)
+[2018-03-23 17:20:52,124] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2018-03-23 17:20:52,138] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2018-03-23 17:20:52,377] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2018-03-23 17:20:52,404] INFO [Socket Server on Broker 0], Started 1 acceptor threads (kafka.network.SocketServer)
+[2018-03-23 17:20:52,462] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:20:52,477] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:20:52,488] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:20:52,618] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:20:52,629] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:20:52,652] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:20:52,665] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:20:52,685] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:20:52,750] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:20:52,752] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:20:52,780] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 24 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-23 17:20:52,833] INFO [ProducerId Manager 0]: Acquired new producerId block (brokerId:0,blockStartProducerId:12000,blockEndProducerId:12999) by writing to Zk with path version 13 (kafka.coordinator.transaction.ProducerIdManager)
+[2018-03-23 17:20:52,892] INFO [Transaction Coordinator 0]: Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:20:52,904] INFO [Transaction Coordinator 0]: Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:20:52,918] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:20:52,923] INFO Got user-level KeeperException when processing sessionid:0x16252b277720000 type:delete cxid:0x28 zxid:0x85 txntype:-1 reqpath:n/a Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:20:52,959] INFO Will not load MX4J, mx4j-tools.jar is not in the classpath (kafka.utils.Mx4jLoader$)
+[2018-03-23 17:20:53,004] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:20:53,006] INFO Got user-level KeeperException when processing sessionid:0x16252b277720000 type:create cxid:0x32 zxid:0x86 txntype:-1 reqpath:n/a Error Path:/brokers Error:KeeperErrorCode = NodeExists for /brokers (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:20:53,008] INFO Got user-level KeeperException when processing sessionid:0x16252b277720000 type:create cxid:0x33 zxid:0x87 txntype:-1 reqpath:n/a Error Path:/brokers/ids Error:KeeperErrorCode = NodeExists for /brokers/ids (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:20:53,029] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:20:53,031] INFO Registered broker 0 at path /brokers/ids/0 with addresses: EndPoint(knoldus-Inspiron-5558,9092,ListenerName(PLAINTEXT),PLAINTEXT) (kafka.utils.ZkUtils)
+[2018-03-23 17:20:53,046] INFO Kafka version : 0.11.0.1 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-03-23 17:20:53,046] INFO Kafka commitId : c2a0d5f9b1f45bf5 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-03-23 17:20:53,047] INFO [Kafka Server 0], started (kafka.server.KafkaServer)
+[2018-03-23 17:30:52,751] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-23 17:38:15,834] INFO [Kafka Server 0], shutting down (kafka.server.KafkaServer)
+[2018-03-23 17:38:15,839] INFO [Kafka Server 0], Starting controlled shutdown (kafka.server.KafkaServer)
+[2018-03-23 17:38:15,999] INFO [Kafka Server 0], Controlled shutdown succeeded (kafka.server.KafkaServer)
+[2018-03-23 17:38:16,002] INFO [Socket Server on Broker 0], Shutting down (kafka.network.SocketServer)
+[2018-03-23 17:38:16,031] INFO [Socket Server on Broker 0], Shutdown completed (kafka.network.SocketServer)
+[2018-03-23 17:38:16,032] INFO [Kafka Request Handler on Broker 0], shutting down (kafka.server.KafkaRequestHandlerPool)
+[2018-03-23 17:38:16,045] INFO [Kafka Request Handler on Broker 0], shut down completely (kafka.server.KafkaRequestHandlerPool)
+[2018-03-23 17:38:16,049] INFO [ThrottledRequestReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:38:16,061] INFO [ThrottledRequestReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:38:16,061] INFO [ThrottledRequestReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:38:16,061] INFO [ThrottledRequestReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:38:17,060] INFO [ThrottledRequestReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:38:17,061] INFO [ThrottledRequestReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:38:17,061] INFO [ThrottledRequestReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:38:18,060] INFO [ThrottledRequestReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:38:18,061] INFO [KafkaApi-0] Shutdown complete. (kafka.server.KafkaApis)
+[2018-03-23 17:38:18,062] INFO [ExpirationReaper-0-topic]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,060] INFO [ThrottledRequestReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:38:18,163] INFO [ExpirationReaper-0-topic]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,163] INFO [ExpirationReaper-0-topic]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,166] INFO [Transaction Coordinator 0]: Shutting down. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:38:18,170] INFO [ProducerId Manager 0]: Shutdown complete: last producerId assigned 12000 (kafka.coordinator.transaction.ProducerIdManager)
+[2018-03-23 17:38:18,171] INFO [Transaction State Manager 0]: Shutdown complete (kafka.coordinator.transaction.TransactionStateManager)
+[2018-03-23 17:38:18,171] INFO [Transaction Marker Channel Manager 0]: Shutting down (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:38:18,173] INFO [Transaction Marker Channel Manager 0]: Stopped (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:38:18,173] INFO [Transaction Marker Channel Manager 0]: Shutdown completed (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:38:18,174] INFO [Transaction Coordinator 0]: Shutdown complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:38:18,175] INFO [GroupCoordinator 0]: Shutting down. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:38:18,183] INFO [ExpirationReaper-0-Heartbeat]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,187] INFO [ExpirationReaper-0-Heartbeat]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,187] INFO [ExpirationReaper-0-Heartbeat]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,187] INFO [ExpirationReaper-0-Rebalance]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,221] INFO [ExpirationReaper-0-Rebalance]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,221] INFO [ExpirationReaper-0-Rebalance]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,222] INFO [GroupCoordinator 0]: Shutdown complete. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:38:18,223] INFO [Replica Manager on Broker 0]: Shutting down (kafka.server.ReplicaManager)
+[2018-03-23 17:38:18,223] INFO [ReplicaFetcherManager on broker 0] shutting down (kafka.server.ReplicaFetcherManager)
+[2018-03-23 17:38:18,226] INFO [ReplicaFetcherManager on broker 0] shutdown completed (kafka.server.ReplicaFetcherManager)
+[2018-03-23 17:38:18,226] INFO [ExpirationReaper-0-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,394] INFO [ExpirationReaper-0-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,394] INFO [ExpirationReaper-0-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,395] INFO [ExpirationReaper-0-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,592] INFO [ExpirationReaper-0-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,592] INFO [ExpirationReaper-0-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,593] INFO [ExpirationReaper-0-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,595] INFO [ExpirationReaper-0-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,595] INFO [ExpirationReaper-0-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:18,599] INFO [Replica Manager on Broker 0]: Shut down completely (kafka.server.ReplicaManager)
+[2018-03-23 17:38:18,600] INFO Shutting down. (kafka.log.LogManager)
+[2018-03-23 17:38:18,610] INFO Shutdown complete. (kafka.log.LogManager)
+[2018-03-23 17:38:18,621] INFO Terminate ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2018-03-23 17:38:18,622] INFO Processed session termination for sessionid: 0x16252b277720000 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:38:18,651] INFO Session: 0x16252b277720000 closed (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:18,651] INFO Closed socket connection for client /127.0.0.1:40836 which had sessionid 0x16252b277720000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-03-23 17:38:18,653] INFO EventThread shut down for session: 0x16252b277720000 (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:38:18,655] INFO [Kafka Server 0], shut down completed (kafka.server.KafkaServer)
+[2018-03-23 17:38:18,656] INFO NIOServerCnxn factory exited run method (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:38:18,656] INFO shutting down (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:18,656] INFO Shutting down (org.apache.zookeeper.server.SessionTrackerImpl)
+[2018-03-23 17:38:18,656] INFO Shutting down (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:38:18,656] INFO PrepRequestProcessor exited loop! (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:38:18,656] INFO Shutting down (org.apache.zookeeper.server.SyncRequestProcessor)
+[2018-03-23 17:38:18,656] INFO SyncRequestProcessor exited! (org.apache.zookeeper.server.SyncRequestProcessor)
+[2018-03-23 17:38:18,656] INFO shutdown of request processor complete (org.apache.zookeeper.server.FinalRequestProcessor)
+[2018-03-23 17:38:32,696] INFO Kafka data directory is /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/kafka_data. (com.lightbend.lagom.internal.kafka.KafkaLocalServer)
+[2018-03-23 17:38:33,312] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = false
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 3000
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 0.11.0-IV2
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,TRACE:TRACE,SASL_SSL:SASL_SSL,PLAINTEXT:PLAINTEXT
+	listeners = PLAINTEXT://:9092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/kafka_data
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 0.11.0-IV2
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 1
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 2
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 3
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2018-03-23 17:38:33,771] INFO Zookeeper data directory is /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/zookeeper_data. (com.lightbend.lagom.internal.kafka.KafkaLocalServer)
+[2018-03-23 17:38:33,787] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+[2018-03-23 17:38:33,793] INFO Server environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,793] INFO Server environment:host.name=knoldus-Inspiron-5558 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,793] INFO Server environment:java.version=1.8.0_151 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,793] INFO Server environment:java.vendor=Oracle Corporation (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,793] INFO Server environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,793] INFO Server environment:java.class.path=/home/knoldus/.sbt/boot/scala-2.12.4/lib/scala-library.jar:/home/knoldus/.ivy2/cache/com.lightbend.lagom/lagom-kafka-server_2.12/jars/lagom-kafka-server_2.12-1.4.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka_2.12/jars/kafka_2.12-0.11.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.11.0.1.jar:/home/knoldus/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.3.0.jar:/home/knoldus/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/home/knoldus/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-5.0.3.jar:/home/knoldus/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.25.jar:/home/knoldus/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar:/home/knoldus/.ivy2/cache/com.101tec/zkclient/jars/zkclient-0.10.jar:/home/knoldus/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.10.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-framework/bundles/curator-framework-2.10.0.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-client/bundles/curator-client-2.10.0.jar:/home/knoldus/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-test/jars/curator-test-2.10.0.jar:/home/knoldus/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.21.0-GA.jar:/home/knoldus/.ivy2/cache/org.apache.commons/commons-math/jars/commons-math-2.2.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,793] INFO Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,793] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,793] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,794] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,794] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,794] INFO Server environment:os.version=4.13.0-36-generic (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,794] INFO Server environment:user.name=knoldus (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,794] INFO Server environment:user.home=/home/knoldus (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,794] INFO Server environment:user.dir=/home/knoldus/IdeaProjects/lagom/assignment-lagom-crud (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,836] INFO tickTime set to 3000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,836] INFO minSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,836] INFO maxSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:33,861] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:38:35,092] INFO starting (kafka.server.KafkaServer)
+[2018-03-23 17:38:35,105] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2018-03-23 17:38:35,133] INFO Starting ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2018-03-23 17:38:35,139] INFO Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,139] INFO Client environment:host.name=knoldus-Inspiron-5558 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,139] INFO Client environment:java.version=1.8.0_151 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,140] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,140] INFO Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,140] INFO Client environment:java.class.path=/home/knoldus/.sbt/boot/scala-2.12.4/lib/scala-library.jar:/home/knoldus/.ivy2/cache/com.lightbend.lagom/lagom-kafka-server_2.12/jars/lagom-kafka-server_2.12-1.4.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka_2.12/jars/kafka_2.12-0.11.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.11.0.1.jar:/home/knoldus/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.3.0.jar:/home/knoldus/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/home/knoldus/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-5.0.3.jar:/home/knoldus/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.25.jar:/home/knoldus/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar:/home/knoldus/.ivy2/cache/com.101tec/zkclient/jars/zkclient-0.10.jar:/home/knoldus/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.10.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-framework/bundles/curator-framework-2.10.0.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-client/bundles/curator-client-2.10.0.jar:/home/knoldus/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-test/jars/curator-test-2.10.0.jar:/home/knoldus/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.21.0-GA.jar:/home/knoldus/.ivy2/cache/org.apache.commons/commons-math/jars/commons-math-2.2.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,140] INFO Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,140] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,140] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,140] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,140] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,140] INFO Client environment:os.version=4.13.0-36-generic (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,140] INFO Client environment:user.name=knoldus (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,140] INFO Client environment:user.home=/home/knoldus (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,140] INFO Client environment:user.dir=/home/knoldus/IdeaProjects/lagom/assignment-lagom-crud (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,141] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=org.I0Itec.zkclient.ZkClient@243c4f91 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:38:35,159] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:38:35,165] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:38:35,172] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:38:35,172] INFO Accepted socket connection from /127.0.0.1:40962 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:38:35,177] INFO Client attempting to establish new session at /127.0.0.1:40962 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:35,178] INFO Creating new log file: log.8a (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-03-23 17:38:35,239] INFO Established session 0x16252c2b20a0000 with negotiated timeout 6000 for client /127.0.0.1:40962 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:38:35,239] INFO Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x16252c2b20a0000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:38:35,241] INFO zookeeper state changed (SyncConnected) (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:38:35,628] INFO Cluster ID = vRe1N3HlRXuEwacqXFAKwg (kafka.server.KafkaServer)
+[2018-03-23 17:38:35,693] INFO [ThrottledRequestReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:38:35,693] INFO [ThrottledRequestReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:38:35,695] INFO [ThrottledRequestReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:38:35,746] INFO Loading logs. (kafka.log.LogManager)
+[2018-03-23 17:38:35,758] INFO Logs loading complete in 12 ms. (kafka.log.LogManager)
+[2018-03-23 17:38:35,860] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2018-03-23 17:38:35,866] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2018-03-23 17:38:35,983] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2018-03-23 17:38:35,986] INFO [Socket Server on Broker 0], Started 1 acceptor threads (kafka.network.SocketServer)
+[2018-03-23 17:38:36,012] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:36,017] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:36,020] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:36,121] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:36,129] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:38:36,145] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:36,147] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:38:36,240] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:38:36,269] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:38:36,281] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:38:36,314] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 30 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-23 17:38:36,349] INFO [ProducerId Manager 0]: Acquired new producerId block (brokerId:0,blockStartProducerId:13000,blockEndProducerId:13999) by writing to Zk with path version 14 (kafka.coordinator.transaction.ProducerIdManager)
+[2018-03-23 17:38:36,398] INFO [Transaction Coordinator 0]: Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:38:36,417] INFO [Transaction Coordinator 0]: Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:38:36,441] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:38:36,470] INFO Got user-level KeeperException when processing sessionid:0x16252c2b20a0000 type:delete cxid:0x28 zxid:0x8e txntype:-1 reqpath:n/a Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:38:36,511] INFO Will not load MX4J, mx4j-tools.jar is not in the classpath (kafka.utils.Mx4jLoader$)
+[2018-03-23 17:38:36,559] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:38:36,561] INFO Got user-level KeeperException when processing sessionid:0x16252c2b20a0000 type:create cxid:0x32 zxid:0x8f txntype:-1 reqpath:n/a Error Path:/brokers Error:KeeperErrorCode = NodeExists for /brokers (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:38:36,564] INFO Got user-level KeeperException when processing sessionid:0x16252c2b20a0000 type:create cxid:0x33 zxid:0x90 txntype:-1 reqpath:n/a Error Path:/brokers/ids Error:KeeperErrorCode = NodeExists for /brokers/ids (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:38:36,580] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:38:36,631] INFO Registered broker 0 at path /brokers/ids/0 with addresses: EndPoint(knoldus-Inspiron-5558,9092,ListenerName(PLAINTEXT),PLAINTEXT) (kafka.utils.ZkUtils)
+[2018-03-23 17:38:36,635] INFO Kafka version : 0.11.0.1 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-03-23 17:38:36,635] INFO Kafka commitId : c2a0d5f9b1f45bf5 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-03-23 17:38:36,636] INFO [Kafka Server 0], started (kafka.server.KafkaServer)
+[2018-03-23 17:44:56,367] INFO Kafka data directory is /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/kafka_data. (com.lightbend.lagom.internal.kafka.KafkaLocalServer)
+[2018-03-23 17:44:56,975] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = false
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 3000
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 0.11.0-IV2
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,TRACE:TRACE,SASL_SSL:SASL_SSL,PLAINTEXT:PLAINTEXT
+	listeners = PLAINTEXT://:9092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/kafka_data
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 0.11.0-IV2
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 1
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 2
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 3
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2018-03-23 17:44:57,292] INFO Zookeeper data directory is /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/zookeeper_data. (com.lightbend.lagom.internal.kafka.KafkaLocalServer)
+[2018-03-23 17:44:57,295] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+[2018-03-23 17:44:57,300] INFO Server environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,300] INFO Server environment:host.name=knoldus-Inspiron-5558 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,300] INFO Server environment:java.version=1.8.0_151 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,300] INFO Server environment:java.vendor=Oracle Corporation (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,300] INFO Server environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,300] INFO Server environment:java.class.path=/home/knoldus/.sbt/boot/scala-2.12.4/lib/scala-library.jar:/home/knoldus/.ivy2/cache/com.lightbend.lagom/lagom-kafka-server_2.12/jars/lagom-kafka-server_2.12-1.4.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka_2.12/jars/kafka_2.12-0.11.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.11.0.1.jar:/home/knoldus/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.3.0.jar:/home/knoldus/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/home/knoldus/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-5.0.3.jar:/home/knoldus/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.25.jar:/home/knoldus/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar:/home/knoldus/.ivy2/cache/com.101tec/zkclient/jars/zkclient-0.10.jar:/home/knoldus/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.10.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-framework/bundles/curator-framework-2.10.0.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-client/bundles/curator-client-2.10.0.jar:/home/knoldus/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-test/jars/curator-test-2.10.0.jar:/home/knoldus/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.21.0-GA.jar:/home/knoldus/.ivy2/cache/org.apache.commons/commons-math/jars/commons-math-2.2.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,301] INFO Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,301] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,301] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,301] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,301] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,301] INFO Server environment:os.version=4.13.0-36-generic (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,301] INFO Server environment:user.name=knoldus (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,301] INFO Server environment:user.home=/home/knoldus (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,301] INFO Server environment:user.dir=/home/knoldus/IdeaProjects/lagom/assignment-lagom-crud (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,312] INFO tickTime set to 3000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,312] INFO minSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,312] INFO maxSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:44:57,327] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:44:57,329] ERROR From testing server (random state: false) for instance: InstanceSpec{dataDirectory=/home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/zookeeper_data, port=2181, electionPort=39699, quorumPort=37755, deleteDataDirectoryOnClose=true, serverId=1, tickTime=-1, maxClientCnxns=-1} org.apache.curator.test.InstanceSpec@885 (org.apache.curator.test.TestingZooKeeperServer)
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.configure(NIOServerCnxnFactory.java:90)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:117)
+	at org.apache.curator.test.TestingZooKeeperMain.runFromConfig(TestingZooKeeperMain.java:93)
+	at org.apache.curator.test.TestingZooKeeperServer$1.run(TestingZooKeeperServer.java:148)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-03-23 17:44:59,329] INFO shutting down (kafka.server.KafkaServer)
+[2018-03-23 17:44:59,340] INFO shut down completed (kafka.server.KafkaServer)
+[2018-03-23 17:45:22,802] WARN Client session timed out, have not heard from server in 188004ms for sessionid 0x16252c2b20a0000 (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:22,803] INFO Client session timed out, have not heard from server in 188004ms for sessionid 0x16252c2b20a0000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:22,809] INFO Expiring session 0x16252c2b20a0000, timeout of 6000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:22,811] INFO [Kafka Server 0], shutting down (kafka.server.KafkaServer)
+[2018-03-23 17:45:22,814] INFO Processed session termination for sessionid: 0x16252c2b20a0000 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:45:22,815] WARN caught end of stream exception (org.apache.zookeeper.server.NIOServerCnxn)
+EndOfStreamException: Unable to read additional data from client sessionid 0x16252c2b20a0000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:239)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-03-23 17:45:22,819] INFO Closed socket connection for client /127.0.0.1:40962 which had sessionid 0x16252c2b20a0000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-03-23 17:45:22,819] INFO [Kafka Server 0], Starting controlled shutdown (kafka.server.KafkaServer)
+[2018-03-23 17:45:22,904] INFO zookeeper state changed (Disconnected) (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:45:22,905] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:45:24,889] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:24,889] INFO Accepted socket connection from /127.0.0.1:41048 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:45:24,890] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:24,911] INFO Client attempting to renew session 0x16252c2b20a0000 at /127.0.0.1:41048 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:24,911] INFO Invalid session 0x16252c2b20a0000 for client /127.0.0.1:41048, probably expired (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:24,911] WARN Unable to reconnect to ZooKeeper service, session 0x16252c2b20a0000 has expired (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:24,911] INFO zookeeper state changed (Expired) (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:45:24,912] INFO Unable to reconnect to ZooKeeper service, session 0x16252c2b20a0000 has expired, closing socket connection (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:24,912] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=org.I0Itec.zkclient.ZkClient@243c4f91 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:24,912] INFO Closed socket connection for client /127.0.0.1:41048 which had sessionid 0x16252c2b20a0000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-03-23 17:45:24,913] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:24,913] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:24,913] INFO Accepted socket connection from /127.0.0.1:41050 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:45:24,914] INFO Client attempting to establish new session at /127.0.0.1:41050 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:24,915] INFO EventThread shut down for session: 0x16252c2b20a0000 (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:24,934] INFO Established session 0x16252c2b20a0001 with negotiated timeout 6000 for client /127.0.0.1:41050 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:24,934] INFO Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x16252c2b20a0001, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:24,934] INFO zookeeper state changed (SyncConnected) (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:45:24,936] INFO re-registering broker info in ZK for broker 0 (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2018-03-23 17:45:24,937] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:45:24,938] WARN Controller doesn't exist (kafka.utils.CoreUtils$)
+kafka.common.KafkaException: Controller doesn't exist
+	at kafka.utils.ZkUtils.getController(ZkUtils.scala:257)
+	at kafka.server.KafkaServer.networkClientControlledShutdown$1(KafkaServer.scala:412)
+	at kafka.server.KafkaServer.controlledShutdown(KafkaServer.scala:561)
+	at kafka.server.KafkaServer.$anonfun$shutdown$2(KafkaServer.scala:585)
+	at kafka.utils.CoreUtils$.swallow(CoreUtils.scala:78)
+	at kafka.utils.Logging.swallowWarn(Logging.scala:94)
+	at kafka.utils.Logging.swallowWarn$(Logging.scala:93)
+	at kafka.utils.CoreUtils$.swallowWarn(CoreUtils.scala:48)
+	at kafka.utils.Logging.swallow(Logging.scala:96)
+	at kafka.utils.Logging.swallow$(Logging.scala:96)
+	at kafka.utils.CoreUtils$.swallow(CoreUtils.scala:48)
+	at kafka.server.KafkaServer.shutdown(KafkaServer.scala:585)
+	at kafka.server.KafkaServerStartable.shutdown(KafkaServerStartable.scala:48)
+	at com.lightbend.lagom.internal.kafka.KafkaLocalServer.stop(KafkaLocalServer.scala:56)
+	at com.lightbend.lagom.internal.kafka.KafkaLauncher$$anon$1.run(KafkaLauncher.scala:41)
+[2018-03-23 17:45:24,941] INFO Got user-level KeeperException when processing sessionid:0x16252c2b20a0001 type:create cxid:0x4 zxid:0x94 txntype:-1 reqpath:n/a Error Path:/brokers Error:KeeperErrorCode = NodeExists for /brokers (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:45:24,941] INFO [Socket Server on Broker 0], Shutting down (kafka.network.SocketServer)
+[2018-03-23 17:45:24,941] INFO Got user-level KeeperException when processing sessionid:0x16252c2b20a0001 type:create cxid:0x5 zxid:0x95 txntype:-1 reqpath:n/a Error Path:/brokers/ids Error:KeeperErrorCode = NodeExists for /brokers/ids (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:45:24,966] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:45:24,966] INFO Registered broker 0 at path /brokers/ids/0 with addresses: EndPoint(knoldus-Inspiron-5558,9092,ListenerName(PLAINTEXT),PLAINTEXT) (kafka.utils.ZkUtils)
+[2018-03-23 17:45:24,967] INFO done re-registering broker (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2018-03-23 17:45:24,967] INFO Subscribing to /brokers/topics path to watch for new topics (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2018-03-23 17:45:24,972] INFO [Socket Server on Broker 0], Shutdown completed (kafka.network.SocketServer)
+[2018-03-23 17:45:24,973] INFO [Kafka Request Handler on Broker 0], shutting down (kafka.server.KafkaRequestHandlerPool)
+[2018-03-23 17:45:24,977] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:45:24,991] INFO [Kafka Request Handler on Broker 0], shut down completely (kafka.server.KafkaRequestHandlerPool)
+[2018-03-23 17:45:24,995] INFO [ThrottledRequestReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:45:25,001] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:45:25,045] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:25,046] INFO Got user-level KeeperException when processing sessionid:0x16252c2b20a0001 type:delete cxid:0x2c zxid:0x99 txntype:-1 reqpath:n/a Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:45:25,149] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:25,251] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:25,352] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:25,453] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:25,554] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:25,655] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:25,756] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:25,802] INFO [ThrottledRequestReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:45:25,802] INFO [ThrottledRequestReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:45:25,802] INFO [ThrottledRequestReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:45:25,812] INFO [ThrottledRequestReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:45:25,812] INFO [ThrottledRequestReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:45:25,813] INFO [ThrottledRequestReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:45:25,859] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:25,961] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:26,062] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:26,164] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:26,265] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:26,366] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:26,467] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:26,568] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:26,670] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:26,771] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:26,813] INFO [ThrottledRequestReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:45:26,813] INFO [ThrottledRequestReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:45:26,814] INFO [KafkaApi-0] Shutdown complete. (kafka.server.KafkaApis)
+[2018-03-23 17:45:26,817] INFO [ExpirationReaper-0-topic]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:26,872] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:26,973] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:27,011] INFO [ExpirationReaper-0-topic]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,011] INFO [ExpirationReaper-0-topic]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,016] INFO [Transaction Coordinator 0]: Shutting down. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:45:27,017] INFO [ProducerId Manager 0]: Shutdown complete: last producerId assigned 13000 (kafka.coordinator.transaction.ProducerIdManager)
+[2018-03-23 17:45:27,018] INFO [Transaction State Manager 0]: Shutdown complete (kafka.coordinator.transaction.TransactionStateManager)
+[2018-03-23 17:45:27,018] INFO [Transaction Marker Channel Manager 0]: Shutting down (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:45:27,019] INFO [Transaction Marker Channel Manager 0]: Stopped (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:45:27,019] INFO [Transaction Marker Channel Manager 0]: Shutdown completed (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:45:27,020] INFO [Transaction Coordinator 0]: Shutdown complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:45:27,020] INFO [GroupCoordinator 0]: Shutting down. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:45:27,021] INFO [ExpirationReaper-0-Heartbeat]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,076] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:27,177] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:27,214] INFO [ExpirationReaper-0-Heartbeat]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,214] INFO [ExpirationReaper-0-Heartbeat]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,215] INFO [ExpirationReaper-0-Rebalance]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,279] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:27,380] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:27,414] INFO [ExpirationReaper-0-Rebalance]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,414] INFO [ExpirationReaper-0-Rebalance]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,416] INFO [GroupCoordinator 0]: Shutdown complete. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:45:27,418] INFO [Replica Manager on Broker 0]: Shutting down (kafka.server.ReplicaManager)
+[2018-03-23 17:45:27,420] INFO [ReplicaFetcherManager on broker 0] shutting down (kafka.server.ReplicaFetcherManager)
+[2018-03-23 17:45:27,426] INFO [ReplicaFetcherManager on broker 0] shutdown completed (kafka.server.ReplicaFetcherManager)
+[2018-03-23 17:45:27,426] INFO [ExpirationReaper-0-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,482] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:27,584] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:27,614] INFO [ExpirationReaper-0-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,614] INFO [ExpirationReaper-0-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,615] INFO [ExpirationReaper-0-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,687] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:27,790] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:27,815] INFO [ExpirationReaper-0-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,815] INFO [ExpirationReaper-0-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,815] INFO [ExpirationReaper-0-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:27,892] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:27,994] WARN Connection to node 0 could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2018-03-23 17:45:28,015] INFO [ExpirationReaper-0-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:28,015] INFO [ExpirationReaper-0-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:28,023] INFO [Replica Manager on Broker 0]: Shut down completely (kafka.server.ReplicaManager)
+[2018-03-23 17:45:28,025] INFO Shutting down. (kafka.log.LogManager)
+[2018-03-23 17:45:28,033] INFO Shutdown complete. (kafka.log.LogManager)
+[2018-03-23 17:45:28,037] INFO Terminate ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2018-03-23 17:45:28,045] INFO Processed session termination for sessionid: 0x16252c2b20a0001 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:45:28,067] INFO Session: 0x16252c2b20a0001 closed (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:28,067] INFO Closed socket connection for client /127.0.0.1:41050 which had sessionid 0x16252c2b20a0001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-03-23 17:45:28,068] INFO EventThread shut down for session: 0x16252c2b20a0001 (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:28,073] INFO [Kafka Server 0], shut down completed (kafka.server.KafkaServer)
+[2018-03-23 17:45:28,073] INFO NIOServerCnxn factory exited run method (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:45:28,073] INFO shutting down (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:28,073] INFO Shutting down (org.apache.zookeeper.server.SessionTrackerImpl)
+[2018-03-23 17:45:28,073] INFO Shutting down (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:45:28,073] INFO Shutting down (org.apache.zookeeper.server.SyncRequestProcessor)
+[2018-03-23 17:45:28,073] INFO PrepRequestProcessor exited loop! (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:45:28,074] INFO SyncRequestProcessor exited! (org.apache.zookeeper.server.SyncRequestProcessor)
+[2018-03-23 17:45:28,074] INFO shutdown of request processor complete (org.apache.zookeeper.server.FinalRequestProcessor)
+[2018-03-23 17:45:51,263] INFO Kafka data directory is /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/kafka_data. (com.lightbend.lagom.internal.kafka.KafkaLocalServer)
+[2018-03-23 17:45:51,733] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = false
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 3000
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 0.11.0-IV2
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,TRACE:TRACE,SASL_SSL:SASL_SSL,PLAINTEXT:PLAINTEXT
+	listeners = PLAINTEXT://:9092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/kafka_data
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 0.11.0-IV2
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 1
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 2
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 3
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2018-03-23 17:45:51,993] INFO Zookeeper data directory is /home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka/target/zookeeper_data. (com.lightbend.lagom.internal.kafka.KafkaLocalServer)
+[2018-03-23 17:45:51,998] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+[2018-03-23 17:45:52,004] INFO Server environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,005] INFO Server environment:host.name=knoldus-Inspiron-5558 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,005] INFO Server environment:java.version=1.8.0_151 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,005] INFO Server environment:java.vendor=Oracle Corporation (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,005] INFO Server environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,005] INFO Server environment:java.class.path=/home/knoldus/.sbt/boot/scala-2.12.4/lib/scala-library.jar:/home/knoldus/.ivy2/cache/com.lightbend.lagom/lagom-kafka-server_2.12/jars/lagom-kafka-server_2.12-1.4.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka_2.12/jars/kafka_2.12-0.11.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.11.0.1.jar:/home/knoldus/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.3.0.jar:/home/knoldus/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/home/knoldus/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-5.0.3.jar:/home/knoldus/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.25.jar:/home/knoldus/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar:/home/knoldus/.ivy2/cache/com.101tec/zkclient/jars/zkclient-0.10.jar:/home/knoldus/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.10.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-framework/bundles/curator-framework-2.10.0.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-client/bundles/curator-client-2.10.0.jar:/home/knoldus/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-test/jars/curator-test-2.10.0.jar:/home/knoldus/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.21.0-GA.jar:/home/knoldus/.ivy2/cache/org.apache.commons/commons-math/jars/commons-math-2.2.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,005] INFO Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,005] INFO Server environment:java.io.tmpdir=/tmp (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,005] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,005] INFO Server environment:os.name=Linux (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,005] INFO Server environment:os.arch=amd64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,005] INFO Server environment:os.version=4.13.0-36-generic (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,005] INFO Server environment:user.name=knoldus (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,006] INFO Server environment:user.home=/home/knoldus (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,006] INFO Server environment:user.dir=/home/knoldus/IdeaProjects/lagom/assignment-lagom-crud (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,012] INFO tickTime set to 3000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,012] INFO minSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,012] INFO maxSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:52,024] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:45:53,242] INFO starting (kafka.server.KafkaServer)
+[2018-03-23 17:45:53,246] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2018-03-23 17:45:53,260] INFO Starting ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2018-03-23 17:45:53,263] INFO Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,263] INFO Client environment:host.name=knoldus-Inspiron-5558 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,263] INFO Client environment:java.version=1.8.0_151 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,263] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,263] INFO Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,263] INFO Client environment:java.class.path=/home/knoldus/.sbt/boot/scala-2.12.4/lib/scala-library.jar:/home/knoldus/.ivy2/cache/com.lightbend.lagom/lagom-kafka-server_2.12/jars/lagom-kafka-server_2.12-1.4.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka_2.12/jars/kafka_2.12-0.11.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.11.0.1.jar:/home/knoldus/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.3.0.jar:/home/knoldus/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/home/knoldus/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-5.0.3.jar:/home/knoldus/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.25.jar:/home/knoldus/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar:/home/knoldus/.ivy2/cache/com.101tec/zkclient/jars/zkclient-0.10.jar:/home/knoldus/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.10.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-framework/bundles/curator-framework-2.10.0.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-client/bundles/curator-client-2.10.0.jar:/home/knoldus/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/knoldus/.ivy2/cache/org.apache.curator/curator-test/jars/curator-test-2.10.0.jar:/home/knoldus/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.21.0-GA.jar:/home/knoldus/.ivy2/cache/org.apache.commons/commons-math/jars/commons-math-2.2.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,263] INFO Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,263] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,263] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,263] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,263] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,263] INFO Client environment:os.version=4.13.0-36-generic (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,263] INFO Client environment:user.name=knoldus (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,263] INFO Client environment:user.home=/home/knoldus (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,264] INFO Client environment:user.dir=/home/knoldus/IdeaProjects/lagom/assignment-lagom-crud (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,264] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=org.I0Itec.zkclient.ZkClient@243c4f91 (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:45:53,272] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:45:53,273] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:53,278] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:53,278] INFO Accepted socket connection from /127.0.0.1:41118 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:45:53,283] INFO Client attempting to establish new session at /127.0.0.1:41118 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:53,284] INFO Creating new log file: log.9b (org.apache.zookeeper.server.persistence.FileTxnLog)
+[2018-03-23 17:45:53,351] INFO Established session 0x16252c961960000 with negotiated timeout 6000 for client /127.0.0.1:41118 (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:45:53,351] INFO Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x16252c961960000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:45:53,357] INFO zookeeper state changed (SyncConnected) (org.I0Itec.zkclient.ZkClient)
+[2018-03-23 17:45:53,540] INFO Cluster ID = vRe1N3HlRXuEwacqXFAKwg (kafka.server.KafkaServer)
+[2018-03-23 17:45:53,608] INFO [ThrottledRequestReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:45:53,608] INFO [ThrottledRequestReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:45:53,610] INFO [ThrottledRequestReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:45:53,670] INFO Loading logs. (kafka.log.LogManager)
+[2018-03-23 17:45:53,713] INFO Logs loading complete in 43 ms. (kafka.log.LogManager)
+[2018-03-23 17:45:53,841] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2018-03-23 17:45:53,867] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2018-03-23 17:45:54,033] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2018-03-23 17:45:54,039] INFO [Socket Server on Broker 0], Started 1 acceptor threads (kafka.network.SocketServer)
+[2018-03-23 17:45:54,067] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:54,075] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:54,079] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:54,202] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:54,202] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:54,208] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:45:54,212] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:45:54,258] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:45:54,267] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:45:54,303] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:45:54,342] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 25 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2018-03-23 17:45:54,404] INFO [ProducerId Manager 0]: Acquired new producerId block (brokerId:0,blockStartProducerId:14000,blockEndProducerId:14999) by writing to Zk with path version 15 (kafka.coordinator.transaction.ProducerIdManager)
+[2018-03-23 17:45:54,513] INFO Got user-level KeeperException when processing sessionid:0x16252c961960000 type:delete cxid:0x28 zxid:0x9f txntype:-1 reqpath:n/a Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:45:54,516] INFO [Transaction Coordinator 0]: Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:45:54,521] INFO [Transaction Coordinator 0]: Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:45:54,541] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:45:54,583] INFO Will not load MX4J, mx4j-tools.jar is not in the classpath (kafka.utils.Mx4jLoader$)
+[2018-03-23 17:45:54,620] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:45:54,622] INFO Got user-level KeeperException when processing sessionid:0x16252c961960000 type:create cxid:0x32 zxid:0xa0 txntype:-1 reqpath:n/a Error Path:/brokers Error:KeeperErrorCode = NodeExists for /brokers (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:45:54,622] INFO Got user-level KeeperException when processing sessionid:0x16252c961960000 type:create cxid:0x33 zxid:0xa1 txntype:-1 reqpath:n/a Error Path:/brokers/ids Error:KeeperErrorCode = NodeExists for /brokers/ids (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:45:54,634] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2018-03-23 17:45:54,640] INFO Registered broker 0 at path /brokers/ids/0 with addresses: EndPoint(knoldus-Inspiron-5558,9092,ListenerName(PLAINTEXT),PLAINTEXT) (kafka.utils.ZkUtils)
+[2018-03-23 17:45:54,644] INFO Kafka version : 0.11.0.1 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-03-23 17:45:54,644] INFO Kafka commitId : c2a0d5f9b1f45bf5 (org.apache.kafka.common.utils.AppInfoParser)
+[2018-03-23 17:45:54,651] INFO [Kafka Server 0], started (kafka.server.KafkaServer)
+[2018-03-23 17:52:15,595] INFO [Kafka Server 0], shutting down (kafka.server.KafkaServer)
+[2018-03-23 17:52:15,615] INFO [Kafka Server 0], Starting controlled shutdown (kafka.server.KafkaServer)
+[2018-03-23 17:52:15,669] INFO [Kafka Server 0], Controlled shutdown succeeded (kafka.server.KafkaServer)
+[2018-03-23 17:52:15,673] INFO [Socket Server on Broker 0], Shutting down (kafka.network.SocketServer)
+[2018-03-23 17:52:15,694] INFO [Socket Server on Broker 0], Shutdown completed (kafka.network.SocketServer)
+[2018-03-23 17:52:15,695] INFO [Kafka Request Handler on Broker 0], shutting down (kafka.server.KafkaRequestHandlerPool)
+[2018-03-23 17:52:15,702] INFO [Kafka Request Handler on Broker 0], shut down completely (kafka.server.KafkaRequestHandlerPool)
+[2018-03-23 17:52:15,710] INFO [ThrottledRequestReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:52:16,658] INFO [ThrottledRequestReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:52:16,658] INFO [ThrottledRequestReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:52:16,660] INFO [ThrottledRequestReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:52:17,657] INFO [ThrottledRequestReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:52:17,658] INFO [ThrottledRequestReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:52:17,658] INFO [ThrottledRequestReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:52:17,665] INFO [ThrottledRequestReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:52:17,665] INFO [ThrottledRequestReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2018-03-23 17:52:17,666] INFO [KafkaApi-0] Shutdown complete. (kafka.server.KafkaApis)
+[2018-03-23 17:52:17,668] INFO [ExpirationReaper-0-topic]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:17,858] INFO [ExpirationReaper-0-topic]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:17,858] INFO [ExpirationReaper-0-topic]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:17,864] INFO [Transaction Coordinator 0]: Shutting down. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:52:17,867] INFO [ProducerId Manager 0]: Shutdown complete: last producerId assigned 14000 (kafka.coordinator.transaction.ProducerIdManager)
+[2018-03-23 17:52:17,868] INFO [Transaction State Manager 0]: Shutdown complete (kafka.coordinator.transaction.TransactionStateManager)
+[2018-03-23 17:52:17,868] INFO [Transaction Marker Channel Manager 0]: Shutting down (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:52:17,869] INFO [Transaction Marker Channel Manager 0]: Stopped (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:52:17,869] INFO [Transaction Marker Channel Manager 0]: Shutdown completed (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2018-03-23 17:52:17,870] INFO [Transaction Coordinator 0]: Shutdown complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2018-03-23 17:52:17,870] INFO [GroupCoordinator 0]: Shutting down. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:52:17,871] INFO [ExpirationReaper-0-Heartbeat]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,063] INFO [ExpirationReaper-0-Heartbeat]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,063] INFO [ExpirationReaper-0-Heartbeat]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,063] INFO [ExpirationReaper-0-Rebalance]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,086] INFO [ExpirationReaper-0-Rebalance]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,086] INFO [ExpirationReaper-0-Rebalance]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,087] INFO [GroupCoordinator 0]: Shutdown complete. (kafka.coordinator.group.GroupCoordinator)
+[2018-03-23 17:52:18,088] INFO [Replica Manager on Broker 0]: Shutting down (kafka.server.ReplicaManager)
+[2018-03-23 17:52:18,089] INFO [ReplicaFetcherManager on broker 0] shutting down (kafka.server.ReplicaFetcherManager)
+[2018-03-23 17:52:18,094] INFO [ReplicaFetcherManager on broker 0] shutdown completed (kafka.server.ReplicaFetcherManager)
+[2018-03-23 17:52:18,094] INFO [ExpirationReaper-0-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,119] INFO [ExpirationReaper-0-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,119] INFO [ExpirationReaper-0-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,120] INFO [ExpirationReaper-0-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,320] INFO [ExpirationReaper-0-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,320] INFO [ExpirationReaper-0-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,320] INFO [ExpirationReaper-0-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,520] INFO [ExpirationReaper-0-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,520] INFO [ExpirationReaper-0-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2018-03-23 17:52:18,527] INFO [Replica Manager on Broker 0]: Shut down completely (kafka.server.ReplicaManager)
+[2018-03-23 17:52:18,529] INFO Shutting down. (kafka.log.LogManager)
+[2018-03-23 17:52:18,539] INFO Shutdown complete. (kafka.log.LogManager)
+[2018-03-23 17:52:18,547] INFO Terminate ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2018-03-23 17:52:18,548] INFO Processed session termination for sessionid: 0x16252c961960000 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:52:18,567] INFO Session: 0x16252c961960000 closed (org.apache.zookeeper.ZooKeeper)
+[2018-03-23 17:52:18,567] INFO Closed socket connection for client /127.0.0.1:41118 which had sessionid 0x16252c961960000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2018-03-23 17:52:18,570] INFO EventThread shut down for session: 0x16252c961960000 (org.apache.zookeeper.ClientCnxn)
+[2018-03-23 17:52:18,572] INFO [Kafka Server 0], shut down completed (kafka.server.KafkaServer)
+[2018-03-23 17:52:18,573] INFO NIOServerCnxn factory exited run method (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2018-03-23 17:52:18,573] INFO shutting down (org.apache.zookeeper.server.ZooKeeperServer)
+[2018-03-23 17:52:18,573] INFO Shutting down (org.apache.zookeeper.server.SessionTrackerImpl)
+[2018-03-23 17:52:18,573] INFO Shutting down (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:52:18,573] INFO Shutting down (org.apache.zookeeper.server.SyncRequestProcessor)
+[2018-03-23 17:52:18,573] INFO PrepRequestProcessor exited loop! (org.apache.zookeeper.server.PrepRequestProcessor)
+[2018-03-23 17:52:18,573] INFO SyncRequestProcessor exited! (org.apache.zookeeper.server.SyncRequestProcessor)
+[2018-03-23 17:52:18,573] INFO shutdown of request processor complete (org.apache.zookeeper.server.FinalRequestProcessor)

@@ -1,0 +1,5 @@
+[0m[[0m[31merror[0m] [0m[0m/home/knoldus/IdeaProjects/lagom/assignment-lagom-crud/crud-lagom-impl/src/main/scala/edu/knoldus/crud/impl/CrudlagomServiceImpl.scala:14:16: overriding method showUser in trait CrudlagomService of type (id: Int)com.lightbend.lagom.scaladsl.api.ServiceCall[akka.NotUsed,main.scala.edu.knoldus.user.api.User];[0m
+[0m[[0m[31merror[0m] [0m[0m method showUser has incompatible type[0m
+[0m[[0m[31merror[0m] [0m[0m  override def showUser(id: Int): ServiceCall[NotUsed, ListBuffer[User]] = ServiceCall { _ =>[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
